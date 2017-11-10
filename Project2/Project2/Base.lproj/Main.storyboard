@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="LyE-it-bch">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQL-Pt-4uN">
+                                <rect key="frame" x="87" y="100" width="200" height="100"/>
+                                <state key="normal" image="france"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wyi-RH-CDl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TEu-Yq-3OO">
+                                <rect key="frame" x="87" y="230" width="200" height="100"/>
+                                <state key="normal" image="russia"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GMS-fd-Iah"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PeB-YE-heZ">
+                                <rect key="frame" x="87" y="360" width="200" height="100"/>
+                                <state key="normal" image="spain"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oaA-DZ-pE6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGs-BP-UjN">
+                                <rect key="frame" x="187" y="503" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MGs-BP-UjN" firstAttribute="centerX" secondItem="PeB-YE-heZ" secondAttribute="centerX" id="ANb-S3-CkN"/>
+                            <constraint firstItem="PeB-YE-heZ" firstAttribute="centerX" secondItem="TEu-Yq-3OO" secondAttribute="centerX" id="CZS-wB-mga"/>
+                            <constraint firstItem="TEu-Yq-3OO" firstAttribute="top" secondItem="zQL-Pt-4uN" secondAttribute="bottom" constant="30" id="YdB-NE-DdL"/>
+                            <constraint firstItem="zQL-Pt-4uN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="b7e-rK-F1K"/>
+                            <constraint firstItem="PeB-YE-heZ" firstAttribute="top" secondItem="TEu-Yq-3OO" secondAttribute="bottom" constant="30" id="hii-RK-QNr"/>
+                            <constraint firstItem="TEu-Yq-3OO" firstAttribute="centerX" secondItem="zQL-Pt-4uN" secondAttribute="centerX" id="lMO-KP-fDi"/>
+                            <constraint firstItem="zQL-Pt-4uN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w3O-cE-hAK"/>
+                            <constraint firstItem="MGs-BP-UjN" firstAttribute="top" secondItem="PeB-YE-heZ" secondAttribute="bottom" constant="43" id="z7f-Em-ar5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Bqh-qd-dHL"/>
+                    <connections>
+                        <outlet property="button1" destination="zQL-Pt-4uN" id="2w6-nm-Vo1"/>
+                        <outlet property="button2" destination="TEu-Yq-3OO" id="yZL-vm-D8C"/>
+                        <outlet property="button3" destination="PeB-YE-heZ" id="jjj-Vl-0SG"/>
+                        <outlet property="scoreLabel" destination="MGs-BP-UjN" id="uJr-rU-rQ5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056.8" y="123.68815592203899"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OAz-Dv-eRc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LyE-it-bch" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZDc-xI-tC5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dKJ-aQ-hDv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2FT-zA-OfL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="89" y="124"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="france" width="200" height="100"/>
+        <image name="russia" width="200" height="100"/>
+        <image name="spain" width="200" height="100"/>
+    </resources>
+</document>
